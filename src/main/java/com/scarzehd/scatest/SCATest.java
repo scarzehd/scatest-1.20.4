@@ -14,5 +14,6 @@ public class SCATest implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModItems.addItemsToGroups();
 	}
 }

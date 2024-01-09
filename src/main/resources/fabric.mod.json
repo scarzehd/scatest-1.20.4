@@ -22,7 +22,7 @@
 			"com.scarzehd.scatest.SCATestClient"
 		],
 		"fabric-datagen": [
-			"com.scarzehd.scatest.SCATestDataGenerator"
+			"com.scarzehd.scatest.datagen.SCATestDataGenerator"
 		]
 	},
 	"mixins": [
