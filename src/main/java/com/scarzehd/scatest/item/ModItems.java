@@ -17,7 +17,7 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item RAW_MACARONI = registerItem("raw_macaroni", new Item(new FabricItemSettings()));
-    public static final Item BOWL_OF_RAW_MACARONI = registerItem("bowl_of_raw_macaroni", new Item(new FabricItemSettings()));
+    public static final Item BOWL_OF_RAW_MACARONI = registerItem("bowl_of_raw_macaroni", new Item(new FabricItemSettings().maxCount(1)));
 
 
     public static void registerModItems() {
