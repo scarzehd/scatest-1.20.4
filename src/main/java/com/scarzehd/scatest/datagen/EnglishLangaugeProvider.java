@@ -1,6 +1,7 @@
 package com.scarzehd.scatest.datagen;
 
 import com.scarzehd.scatest.SCATest;
+import com.scarzehd.scatest.block.ModBlocks;
 import com.scarzehd.scatest.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -16,6 +17,8 @@ public class EnglishLangaugeProvider extends FabricLanguageProvider {
     public void generateTranslations(TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.RAW_MACARONI, "Raw Macaroni");
         translationBuilder.add(ModItems.BOWL_OF_RAW_MACARONI, "Bowl of Raw Macaroni");
+
+        translationBuilder.add(ModBlocks.BLOCK_OF_RAW_MACARONI, "Block of Raw Macaroni");
 
         try {
             Path existingFilePath = dataOutput.getModContainer().findPath("assets/" + SCATest.MOD_ID + "/lang/en_us.existing.json").get();

@@ -1,5 +1,6 @@
 package com.scarzehd.scatest;
 
+import com.scarzehd.scatest.block.ModBlocks;
 import com.scarzehd.scatest.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class SCATest implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItems.addItemsToGroups();
+		ModBlocks.registerModBlocks();
 	}
 }

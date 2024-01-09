@@ -1,6 +1,7 @@
 package com.scarzehd.scatest.item;
 
 import com.scarzehd.scatest.SCATest;
+import com.scarzehd.scatest.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -27,9 +28,10 @@ public class ModItems {
             (context, entries) -> {
                 entries.add(RAW_MACARONI);
                 entries.add(BOWL_OF_RAW_MACARONI);
+                entries.add(ModBlocks.BLOCK_OF_RAW_MACARONI.asItem());
             });
 
-    public static void registerModItems() {
+    public static void registerModItems() {  // This loads all the static fields of this class
         SCATest.LOGGER.info("Registering items for " + SCATest.MOD_ID);
     }
 
@@ -39,10 +41,11 @@ public class ModItems {
         addItemsToItemGroup(ItemGroups.INGREDIENTS, (entries) -> {
             entries.add(RAW_MACARONI);
             entries.add(BOWL_OF_RAW_MACARONI);
+            entries.add(ModBlocks.BLOCK_OF_RAW_MACARONI.asItem());
         });
     }
 
-    private static Item registerItem(String name, Item item) {
+    public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SCATest.MOD_ID, name), item);
     }
 

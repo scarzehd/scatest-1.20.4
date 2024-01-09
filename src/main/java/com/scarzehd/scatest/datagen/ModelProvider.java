@@ -1,5 +1,6 @@
 package com.scarzehd.scatest.datagen;
 
+import com.scarzehd.scatest.block.ModBlocks;
 import com.scarzehd.scatest.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -14,7 +15,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_RAW_MACARONI);
     }
 
     @Override

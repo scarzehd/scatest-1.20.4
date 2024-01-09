@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "m": {
+      "item": "scatest:raw_macaroni"
+    }
+  },
+  "pattern": [
+    "mm",
+    "mm"
+  ],
+  "result": {
+    "item": "scatest:block_of_raw_macaroni"
+  }
+}
