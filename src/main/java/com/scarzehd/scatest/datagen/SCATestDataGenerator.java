@@ -9,5 +9,6 @@ public class SCATestDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(EnglishLangaugeProvider::new);
 		pack.addProvider(ModelProvider::new);
+		pack.addProvider(RecipeProvider::new);
 	}
 }

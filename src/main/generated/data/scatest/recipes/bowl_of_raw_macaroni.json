@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "scatest:raw_macaroni"
+    }
+  ],
+  "result": {
+    "item": "scatest:bowl_of_raw_macaroni"
+  }
+}
