@@ -17,6 +17,8 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item RAW_MACARONI = registerItem("raw_macaroni", new Item(new FabricItemSettings()));
+    public static final Item BOWL_OF_RAW_MACARONI = registerItem("bowl_of_raw_macaroni", new Item(new FabricItemSettings()));
+
 
     public static void registerModItems() {
         SCATest.LOGGER.info("Registering items for " + SCATest.MOD_ID);
@@ -27,6 +29,7 @@ public class ModItems {
 
         addItemsToItemGroup(ItemGroups.INGREDIENTS, (entries) -> {
             entries.add(RAW_MACARONI);
+            entries.add(BOWL_OF_RAW_MACARONI);
         });
     }
 

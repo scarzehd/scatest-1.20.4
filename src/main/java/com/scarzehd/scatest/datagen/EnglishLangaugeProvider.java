@@ -12,5 +12,6 @@ public class EnglishLangaugeProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.RAW_MACARONI, "Raw Macaroni");
+        translationBuilder.add(ModItems.BOWL_OF_RAW_MACARONI, "Bowl of Raw Macaroni");
     }
 }

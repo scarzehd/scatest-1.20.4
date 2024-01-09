@@ -20,5 +20,6 @@ public class ModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RAW_MACARONI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOWL_OF_RAW_MACARONI, Models.GENERATED);
     }
 }
